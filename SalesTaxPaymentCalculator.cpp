@@ -2,7 +2,7 @@
  Com Sci 31 Project 2
  payment.cpp
  Author: Danielle Choi
- UID: 306008729
+ UID: XXXXXXXXX
  Discussion Section: 1C
  Date: 2023/01/24.
  */
@@ -282,7 +282,7 @@ int main() {
         cout<<"Invalid month!"<<endl;
     } else if (day<1||day>31){
         cout<<"Invalid day!"<<endl;
-    } else if (year<1||year>2025){
+    } else if (year<1||year>9999){
         cout<<"Invalid year!"<<endl;
     } else {
         cout<<"Please pay a total of $";
