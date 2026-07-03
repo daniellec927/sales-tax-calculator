@@ -271,13 +271,19 @@ int main() {
     
     total_amount=purchase_amount*(1+0.01*(stateTaxRate+avgLocalTaxRate+Levy));
 
-    if (invalid_state){
+    int maxDay=31;
+if (month=="April"||month=="June"||month=="September"||month=="November")
+maxDay=30;
+else if (month=="February")
+maxDay=(((year%4==0)&&(year%100!=0))||(year%400==0))?29:28;
+
+if (invalid_state){
         cout<<"Invalid state!"<<endl;
     } else if (purchase_amount<=0){
         cout<<"Invalid amount!"<<endl;
     } else if ((month!="January")&&(month!="February")&&(month!="March")&&(month!="April")&&(month!="May")&&(month!="June")&&(month!="July")&&(month!="August")&&(month!="September")&&(month!="October")&&(month!="November")&&(month!="December")){
         cout<<"Invalid month!"<<endl;
-    } else if (day<1||day>31){
+    } else if (day<1||day>maxDay){
         cout<<"Invalid day!"<<endl;
     } else if (year<1||year>9999){
         cout<<"Invalid year!"<<endl;
