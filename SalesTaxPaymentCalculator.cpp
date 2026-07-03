@@ -1,9 +1,6 @@
 /*
- Com Sci 31 Project 2
  payment.cpp
  Author: Danielle Choi
- UID: XXXXXXXXX
- Discussion Section: 1C
  Date: 2023/01/24.
  */
 
